@@ -1,0 +1,115 @@
+:root {
+    --brand: #f07b26;
+    --sub: #00dbd7;
+    --second: #4e4e4e;
+    --body: #516171;
+    --border: rgba(0,0,0,0.08);
+    --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+  }
+/* Path */
+.banner-area {
+    position: relative;
+    min-height: 300px;
+    color: #fff;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(221, 172, 56, 0.2)), url("../img/image-3/share-market-1-path.jpg") fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .banner-title {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 38px;
+    font-weight: 900;
+  }
+  
+  @media (max-width: 767px) {
+    .banner-title {
+      font-size: 48px;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .banner-title {
+      font-size: 32px;
+    }
+  }
+  
+  .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 1;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .banner-heading {
+    text-align: center;
+  }
+  
+  .breadcrumb {
+    padding: 0;
+    background: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  
+  .breadcrumb li a,
+  .breadcrumb .breadcrumb-item,
+  .breadcrumb li a:focus {
+    color: #fff !important;
+    text-decoration: none;
+  }
+  
+  .breadcrumb li a:hover {
+    text-decoration: underline;
+  }
+  
+  .breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+    color: #fff;
+  }
+  
+  /* article  */
+  .single-post-container {
+    /* max-width: 1200px; */
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.post-header {
+    text-align: center;
+}
+.post-header img {
+    width: 50%;
+    border-radius: 8px;
+}
+.heading-03 {
+    color: #ff6600;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+}
+.post-content {
+    text-align: left;
+}
+@media (max-width: 1024px) {
+    .post-header img {
+        width: 70%;
+    }
+}
+
+/* Mobile View (Below 768px) */
+@media (max-width: 768px) {
+    .post-header img {
+        width: 100%;
+    }
+}
